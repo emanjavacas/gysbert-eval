@@ -14,7 +14,7 @@ for file in glob.glob(source):
             if not line:
                 if tokens:
                     sents.append({'token': tokens, 'ne_tags': ners, 'id': len(sents)})
-                    tokesn, ners = [], []
+                    tokens, ners = [], []
             else:
                 token, ner = line.split('\t')
                 tokens.append(token)
